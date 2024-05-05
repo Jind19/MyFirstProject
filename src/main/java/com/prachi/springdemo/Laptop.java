@@ -6,7 +6,7 @@ public class Laptop {
         System.out.println("Laptop object created");
     }
 
-    public void code(){
-        System.out.println("Laptop is used to create code");
+    public void compile(){
+        System.out.println("Laptop is used to compile");
     }
 }

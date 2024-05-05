@@ -10,11 +10,11 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");  //creates Container
 
         Developer obj = (Developer) context.getBean("developer1");
-        obj.age = 21;
-        System.out.println(obj.age);
+        System.out.println(obj.getAge());
+        System.out.println(obj.getName());
         obj.code();
 
         Laptop lappy = (Laptop) context.getBean("laptop");
-        lappy.code();
+        lappy.compile();
     }
 }

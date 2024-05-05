@@ -6,10 +6,14 @@
     </bean> -->
 
 
-    <bean id ="developer1" class = "com.prachi.springdemo.Developer" scope="prototype">
+    <bean id ="developer1" class = "com.prachi.springdemo.Developer">
+        <constructor-arg value="21"/>
+        <constructor-arg value="Mohit"/>
+        <constructor-arg ref="laptop"/>
+
     </bean>
 
-    <bean id ="laptop" class = "com.prachi.springdemo.Laptop" scope="singleton">
+    <bean id ="laptop" class = "com.prachi.springdemo.Laptop">
     </bean>
 
 </beans>
