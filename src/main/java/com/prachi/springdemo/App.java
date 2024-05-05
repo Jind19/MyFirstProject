@@ -11,7 +11,6 @@ public class App
 
         Developer obj = (Developer) context.getBean("developer1");
         System.out.println(obj.getAge());
-        System.out.println(obj.getName());
         obj.code();
 
     }
