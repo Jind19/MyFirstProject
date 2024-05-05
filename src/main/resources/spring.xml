@@ -6,14 +6,15 @@
     </bean> -->
 
 
-    <bean id ="developer1" class = "com.prachi.springdemo.Developer">
+    <bean id ="developer1" class = "com.prachi.springdemo.Developer" autowire="byName">
 
         <property name="age" value="25"/>
-        <property name="com" ref="laptop"/>
+        <!-- <property name="com" ref="com"/>-->
 
     </bean>
 
-    <bean id ="laptop" class = "com.prachi.springdemo.Laptop">
-    </bean>
+    <bean id="com1" class="com.prachi.springdemo.Laptop"/>
+    <bean id ="com" class = "com.prachi.springdemo.Desktop"/>
+
 
 </beans>
