@@ -9,8 +9,8 @@ public class Developer {
 
     private int age;
 
-    @Autowired
-    @Qualifier("laptop")
+
+    //@Qualifier("laptop")
     private Computer com;
 
     public Developer(){
@@ -30,6 +30,8 @@ public class Developer {
         return com;
     }
 
+    @Autowired
+    @Qualifier("laptop")
     public void setCom(Computer com) {
         this.com = com;
     }
