@@ -3,10 +3,6 @@ package com.prachi.springdemo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -14,9 +10,11 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");  //creates Container
 
         Developer obj = (Developer) context.getBean("developer1");
+        obj.age = 21;
+        System.out.println(obj.age);
         obj.code();
 
-        Developer obj1 = (Developer) context.getBean("developer1");
-        obj1.code();
+        Laptop lappy = (Laptop) context.getBean("laptop");
+        lappy.code();
     }
 }

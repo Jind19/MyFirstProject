@@ -2,11 +2,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- <bean id="developer" class = "com.prachi.springdemo.Developer" scope="prototype">
+    </bean> -->
 
-    <bean class = "com.prachi.springdemo.Laptop">
+
+    <bean id ="developer1" class = "com.prachi.springdemo.Developer" scope="prototype">
     </bean>
 
-    <bean id ="developer1" class = "com.prachi.springdemo.Developer">
+    <bean id ="laptop" class = "com.prachi.springdemo.Laptop" scope="singleton">
     </bean>
 
 </beans>
