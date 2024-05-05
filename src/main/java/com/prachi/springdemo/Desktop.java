@@ -1,5 +1,8 @@
 package com.prachi.springdemo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Desktop implements Computer{
 
     public Desktop(){
