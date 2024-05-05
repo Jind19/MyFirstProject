@@ -11,6 +11,7 @@ public class App
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Developer obj = context.getBean(Developer.class);
+        Developer obj1 = context.getBean(Developer.class);
         System.out.println(obj.getAge());
         obj.code();
 //
