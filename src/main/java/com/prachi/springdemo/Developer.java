@@ -8,14 +8,6 @@ public class Developer {
     public Developer(){
         System.out.println("Developer object created");
     }
-//
-//    public Developer(int age, Computer lap, String name){
-//        System.out.println("Para constructor laptop called");
-//        this.age = age;
-//        this.lap = lap;
-//        this.name = name;
-//
-//    }
 
     public int getAge() {
         return age;

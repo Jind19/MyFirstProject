@@ -9,11 +9,12 @@
     <bean id ="developer1" class = "com.prachi.springdemo.Developer" autowire="byType">
 
         <property name="age" value="25"/>
-        <!-- <property name="com" ref="com"/>-->
-
+       <property name="com">
+           <bean id="com1" class="com.prachi.springdemo.Laptop" lazy-init="true"/>
+       </property>
     </bean>
 
-    <bean id="com1" class="com.prachi.springdemo.Laptop" lazy-init="true"/>
+
     <bean id ="com2" class = "com.prachi.springdemo.Desktop" primary="true"/>
 
 
