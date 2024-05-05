@@ -14,7 +14,5 @@ public class App
         System.out.println(obj.getName());
         obj.code();
 
-        Laptop lappy = (Laptop) context.getBean("laptop");
-        lappy.compile();
     }
 }

@@ -7,9 +7,11 @@
 
 
     <bean id ="developer1" class = "com.prachi.springdemo.Developer">
-        <constructor-arg value="21"/>
-        <constructor-arg value="Mohit"/>
-        <constructor-arg ref="laptop"/>
+        <constructor-arg index="1" ref="laptop" />
+        <constructor-arg index="0" value="21" />
+
+        <constructor-arg index="2" value="Mohit" />
+
 
     </bean>
 
