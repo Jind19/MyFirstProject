@@ -16,6 +16,8 @@ public class App
         Developer obj = (Developer) context.getBean("developer1");
         obj.code();
 
+        //kjjhjkhkjh
+
         Developer obj1 = (Developer) context.getBean("developer1");
         obj1.code();
     }
