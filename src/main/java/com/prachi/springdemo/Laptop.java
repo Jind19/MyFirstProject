@@ -1,13 +1,11 @@
 package com.prachi.springdemo;
 
-public class Laptop implements Computer {
+import org.springframework.stereotype.Component;
 
-    public Laptop(){
-        System.out.println("Laptop object created");
+    @Component
+    public class Laptop implements Computer{
+        public void compile(){
+            System.out.println("Compiling using laptop");
+        }
     }
 
-    @Override
-    public void compile(){
-        System.out.println("Compiling using laptop");
-    }
-}

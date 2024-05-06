@@ -1,12 +1,13 @@
 package com.prachi.springdemo;
 
-public class Desktop implements Computer{
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
-//    public Desktop(){
-//        System.out.println("Desktop object created");
-//    }
-
-    public void compile(){
-        System.out.println("Compiling using desktop");
+@Component
+@Primary
+    public class Desktop implements Computer{
+        public void compile(){
+            System.out.println("Compiling using desktop");
+        }
     }
-}
+
