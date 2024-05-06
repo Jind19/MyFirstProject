@@ -1,4 +1,4 @@
-package com.prachi.springdemo;
+package com.prachi.springdemo.model;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
